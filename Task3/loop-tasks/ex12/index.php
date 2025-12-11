@@ -1,22 +1,26 @@
 <?php
 
-$totalRows = 5;
 
-// الجزء العلوي (تصاعدي)
-for ($i = 1; $i <= $totalRows; $i++) {
-    echo str_repeat(" ", $totalRows - $i); // المسافات قبل الأحرف
+$letters = ["A", "B", "C", "D", "E"];  
+$rows = 5;
+
+for ($i = 1; $i <= $rows; $i++) {
+
+    echo str_repeat("&nbsp;&nbsp;", $rows - $i);
     for ($j = 0; $j < $i; $j++) {
-        echo chr(65 + $j) . " ";
+        echo $letters[$j] . " ";
     }
+
     echo "<br>";
 }
 
-// الجزء السفلي (تناقصي)
-for ($i = $totalRows - 1; $i >= 1; $i--) {
-    echo str_repeat(" ", $totalRows - $i); // المسافات قبل الأحرف
+for ($i = $rows - 1; $i >= 1; $i--) {
+
+    echo str_repeat("&nbsp;&nbsp;", $rows - $i);
     for ($j = 0; $j < $i; $j++) {
-        echo chr(65 + $j) . " ";
+        echo $letters[$j] . " ";
     }
+
     echo "<br>";
 }
 

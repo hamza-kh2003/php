@@ -1,5 +1,6 @@
-<?php
 
+<?php
+//1
 echo '
 <table border="1">
     <tr>
@@ -23,6 +24,7 @@ echo '
 
 
 <?php
+//2
 $filename = "php-basfilenamees.php";
 if (file_exists($filename)) {
     $lastModified = filemtime($filename);
@@ -36,6 +38,7 @@ if (file_exists($filename)) {
 
 
 <?php  
+//3
 echo "<br>";
 
    $lines = count(file($filename));
